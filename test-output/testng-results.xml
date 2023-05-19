@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[- - - DataBase Connected Succesfully - - -]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Launched Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Launched Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Launched Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+    </line>
+    <line>
+      <![CDATA[- - - DataBase Closed Succesfully - - - ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-05-19T20:13:17 IST" name="Suite" finished-at="2023-05-19T20:14:42 IST" duration-ms="84219">
+    <groups>
+    </groups>
+    <test started-at="2023-05-19T20:13:17 IST" name="Test1" finished-at="2023-05-19T20:13:56 IST" duration-ms="39046">
+      <class name="Agent_Module.PracticeParllelTest">
+        <test-method is-config="true" signature="bcConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:17 IST" name="bcConfigration" finished-at="2023-05-19T20:13:54 IST" duration-ms="36657" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Launched Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bcConfigration -->
+        <test-method is-config="true" signature="bmConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="bmConfigration" finished-at="2023-05-19T20:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfigration -->
+        <test-method is-config="true" signature="bmConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="bmConfigration" finished-at="2023-05-19T20:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfigration -->
+        <test-method is-config="true" signature="bmConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="bmConfigration" finished-at="2023-05-19T20:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfigration -->
+        <test-method signature="Test1()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="Test1" finished-at="2023-05-19T20:13:54 IST" duration-ms="42" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test3()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="Test3" finished-at="2023-05-19T20:13:54 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method signature="Test2()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="Test2" finished-at="2023-05-19T20:13:54 IST" duration-ms="48" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method is-config="true" signature="amConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="amConfigration" finished-at="2023-05-19T20:13:54 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfigration -->
+        <test-method is-config="true" signature="amConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="amConfigration" finished-at="2023-05-19T20:13:54 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfigration -->
+        <test-method is-config="true" signature="amConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="amConfigration" finished-at="2023-05-19T20:13:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfigration -->
+        <test-method is-config="true" signature="acConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="acConfigration" finished-at="2023-05-19T20:13:56 IST" duration-ms="2101" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acConfigration -->
+        <test-method is-config="true" signature="acConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="acConfigration" finished-at="2023-05-19T20:13:56 IST" duration-ms="2101" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acConfigration -->
+        <test-method is-config="true" signature="acConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:54 IST" name="acConfigration" finished-at="2023-05-19T20:13:56 IST" duration-ms="2102" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acConfigration -->
+        <test-method is-config="true" signature="acConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@1d2adfbe]" started-at="2023-05-19T20:13:56 IST" name="acConfigration" finished-at="2023-05-19T20:13:56 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acConfigration -->
+      </class> <!-- Agent_Module.PracticeParllelTest -->
+    </test> <!-- Test1 -->
+    <test started-at="2023-05-19T20:13:57 IST" name="Test2" finished-at="2023-05-19T20:14:21 IST" duration-ms="24169">
+      <class name="Agent_Module.PracticeParllelTest">
+        <test-method is-config="true" signature="bcConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:13:57 IST" name="bcConfigration" finished-at="2023-05-19T20:14:20 IST" duration-ms="23506" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Launched Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bcConfigration -->
+        <test-method is-config="true" signature="bmConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="bmConfigration" finished-at="2023-05-19T20:14:20 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfigration -->
+        <test-method is-config="true" signature="bmConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="bmConfigration" finished-at="2023-05-19T20:14:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfigration -->
+        <test-method signature="Test2()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="Test2" finished-at="2023-05-19T20:14:20 IST" duration-ms="28" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method signature="Test3()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="Test3" finished-at="2023-05-19T20:14:20 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method is-config="true" signature="bmConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="bmConfigration" finished-at="2023-05-19T20:14:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfigration -->
+        <test-method signature="Test1()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="Test1" finished-at="2023-05-19T20:14:20 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method is-config="true" signature="amConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="amConfigration" finished-at="2023-05-19T20:14:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfigration -->
+        <test-method is-config="true" signature="amConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="amConfigration" finished-at="2023-05-19T20:14:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfigration -->
+        <test-method is-config="true" signature="acConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="acConfigration" finished-at="2023-05-19T20:14:21 IST" duration-ms="592" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acConfigration -->
+        <test-method is-config="true" signature="amConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:20 IST" name="amConfigration" finished-at="2023-05-19T20:14:20 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfigration -->
+        <test-method is-config="true" signature="acConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@7cc0cdad]" started-at="2023-05-19T20:14:21 IST" name="acConfigration" finished-at="2023-05-19T20:14:21 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acConfigration -->
+      </class> <!-- Agent_Module.PracticeParllelTest -->
+    </test> <!-- Test2 -->
+    <test started-at="2023-05-19T20:14:21 IST" name="Test3" finished-at="2023-05-19T20:14:42 IST" duration-ms="20818">
+      <class name="Agent_Module.PracticeParllelTest">
+        <test-method is-config="true" signature="bsConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:13:17 IST" name="bsConfigration" finished-at="2023-05-19T20:13:17 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[- - - DataBase Connected Succesfully - - -]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bsConfigration -->
+        <test-method is-config="true" signature="bcConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:21 IST" name="bcConfigration" finished-at="2023-05-19T20:14:41 IST" duration-ms="20032" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Launched Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- bcConfigration -->
+        <test-method is-config="true" signature="bmConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="bmConfigration" finished-at="2023-05-19T20:14:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfigration -->
+        <test-method is-config="true" signature="bmConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="bmConfigration" finished-at="2023-05-19T20:14:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfigration -->
+        <test-method signature="Test1()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="Test1" finished-at="2023-05-19T20:14:41 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test1 -->
+        <test-method signature="Test2()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="Test2" finished-at="2023-05-19T20:14:41 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+        <test-method signature="Test3()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="Test3" finished-at="2023-05-19T20:14:41 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test3 -->
+        <test-method is-config="true" signature="bmConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="bmConfigration" finished-at="2023-05-19T20:14:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfigration -->
+        <test-method is-config="true" signature="amConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="amConfigration" finished-at="2023-05-19T20:14:41 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfigration -->
+        <test-method is-config="true" signature="amConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="amConfigration" finished-at="2023-05-19T20:14:41 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfigration -->
+        <test-method is-config="true" signature="amConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="amConfigration" finished-at="2023-05-19T20:14:41 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfigration -->
+        <test-method is-config="true" signature="acConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:41 IST" name="acConfigration" finished-at="2023-05-19T20:14:42 IST" duration-ms="767" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acConfigration -->
+        <test-method is-config="true" signature="acConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:42 IST" name="acConfigration" finished-at="2023-05-19T20:14:42 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[ - - - chrome Has Closed Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- acConfigration -->
+        <test-method is-config="true" signature="asConfigration()[pri:0, instance:Agent_Module.PracticeParllelTest@a1153bc]" started-at="2023-05-19T20:14:42 IST" name="asConfigration" finished-at="2023-05-19T20:14:42 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[- - - DataBase Closed Succesfully - - - ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- asConfigration -->
+      </class> <!-- Agent_Module.PracticeParllelTest -->
+    </test> <!-- Test3 -->
+  </suite> <!-- Suite -->
+</testng-results>
