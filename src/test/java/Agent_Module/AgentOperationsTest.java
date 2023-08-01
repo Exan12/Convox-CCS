@@ -1,5 +1,6 @@
 package Agent_Module;
 
+import org.testng.Reporter;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
@@ -94,7 +95,7 @@ public class AgentOperationsTest extends BaseClass {
 		ahp.Outboundcall(driver, "9100187911");
 		ahp.CrmPopup(driver);
 		Thread.sleep(3000);
-		ahp.CrmUpdateAndEndCall(driver, "Checking CRM Update", "Dipija telecom ", "Hyderabad", "NI --- Not Interested");
+		ahp.CrmUpdateAndEndCall(driver, "Checking CRM Update", "Deepija telecom ","Deepija Main Product Convox","No Remark","Main Branch", "Hyderabad", "NI --- Not Interested");
 	}
 	
 	/**
@@ -109,6 +110,33 @@ public class AgentOperationsTest extends BaseClass {
 		ahp.CrmPopup(driver);
 		Thread.sleep(3000);
 		ahp.WrapupCall(driver);
+	}
+	
+	/**
+	 * This Test Script is used to intiate calls Automatically and update CRM in 
+	 * ConVox CCS 3.2.4 Application
+	 */
+	@Test
+	public void PredectiveCallTest()
+	{
+		try {
+			
+			while(true) {
+				AgentHomePage ahp = new AgentHomePage(driver);
+				ahp.SwitchToAgentFrame(driver);
+				String Queuetext = ahp.QueueNumber.getText();
+				System.out.println(Queuetext);
+				for(int i=0;i<Queuetext.length();i++)
+				{
+					ahp.CrmUpdateAndEndCall(driver,"Welcome to DPTEL", "DEEPIJA","Deepija Main Product was Convox","No Remark","Main Branch","Hyderabad", "Test --- Test_Call");
+					Reporter.log("CRM updated Succesfully",true);
+				}
+			}
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		
 	}
 	
 }

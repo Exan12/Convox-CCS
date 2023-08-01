@@ -1,28 +1,53 @@
 package Agent_Module;
 
-
-
 import org.testng.Reporter;
+
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import Convox.GenericLibraries.BaseClass;
 import Convox.GenericLibraries.XLUtility;
+import Convox.ObjectRepository.AgentModule.AgentHomePage;
 import Convox.ObjectRepository.AgentModule.AgentLoginPage;
 
 @Listeners(Convox.GenericLibraries.ListenersImplementationLibrary.class)
 public class AgentMultipleLoginTest extends BaseClass{
-	
+
 	@Test(dataProvider = "LoginData")
 	public void MultipleLogin(String USERNAME,String PASSWORD,String STATION) throws Throwable
 	{
 		AgentLoginPage alp = new AgentLoginPage(driver);
 		alp.LoginToAgentModule(USERNAME, PASSWORD, STATION);
-		Reporter.log("Runnning Thread: "+Thread.currentThread().getId(),true);
+		Reporter.log("Runnning Current Thread: "+Thread.currentThread().getId(),true);
 		Reporter.log(USERNAME+" --- Logged Into Agent Module Succesfully --- ",true);
+
+		// Predective Calling Mode with Pacing 1
+		try {
+
+			while(true) {
+				AgentHomePage ahp = new AgentHomePage(driver);
+				ahp.SwitchToAgentFrame(driver);
+				String Queuetext = ahp.QueueNumber.getText();
+				System.out.println(Queuetext);
+				for(int i=0;i<Queuetext.length();i++)
+				{
+					ahp.CrmUpdateAndEndCall(driver,"Welcome to DPTEL", "DEEPIJA","Deepija Main Product was Convox","No Remark","Main Branch","Hyderabad", "Test --- Test_Call");
+					Reporter.log("CRM updated Succesfully",true);
+					Thread.sleep(3000);
+					ahp.LogoutFromAgentModule(driver);
+					Reporter.log(USERNAME+" --- Logged Out from Agent Module Succesfully --- ",true);
+
+				}
+				
+			}
+		} 
+		catch (Exception e) {
+			e.printStackTrace();
+		} 
+
 	}
-	
+
 	@DataProvider(name = "LoginData")
 	public String [][] getMultipleusername() throws Throwable
 	{
@@ -36,15 +61,15 @@ public class AgentMultipleLoginTest extends BaseClass{
 		String loginData[][]=new String[totalrows][totalcols];
 
 
-		for(int i=1;i<=totalrows;i++) //1
+		for(int i=1;i<=totalrows;i++) //Row ---> 1
 		{
-			for(int j=0;j<totalcols;j++) //0
+			for(int j=0;j<totalcols;j++) //Coloumn ---> 0
 			{
- 				loginData[i-1][j]=xlutil.getCellData("Sheet1", i, j);
+				loginData[i-1][j]=xlutil.getCellData("Sheet1", i, j);
 			}
 
 		}
 
 		return loginData;
-}
+	}
 }

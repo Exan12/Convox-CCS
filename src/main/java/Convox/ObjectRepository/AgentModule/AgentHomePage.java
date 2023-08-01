@@ -61,7 +61,7 @@ public class AgentHomePage{
 	@FindBy (xpath = "//input[@id='crm_field_1']")
 	private WebElement CompanyNameTxtField;
 	
-	@FindBy (xpath = "//select[@id='crm_field_2']")
+	@FindBy (xpath = "//select[@id='crm_field_1']")
 	private WebElement CompanyLoctaionDropDown;
 	
 	@FindBy (xpath = "//select[@id='disp']")
@@ -78,6 +78,126 @@ public class AgentHomePage{
 	
 	@FindBy (xpath = "//input[@value='EndCall']")
 	private WebElement EndCallBtn;
+	
+	@FindBy (xpath = "//button[@id='Conf']")
+	private WebElement ConferenceButton;
+	
+	@FindBy (xpath = "//input[@id='line_1']")
+	private WebElement Line1;
+	
+	@FindBy (xpath = "//input[@id='line_2']")
+	private WebElement Line2;
+	
+	@FindBy (xpath = "//input[@id='line_3']")
+	private WebElement Line3;
+	
+	@FindBy (xpath = "//input[@id='line_4']")
+	private WebElement Line4;
+	
+	@FindBy (xpath = "//input[@id='line_5']")
+	private WebElement Line5;
+	
+	@FindBy (xpath = "//input[@id='phone_number_span1']")
+	private WebElement PhoneNumberTextField1;
+	
+	@FindBy (xpath = "//input[@id='phone_number_span2']")
+	private WebElement PhoneNumberTextField2;
+	
+	@FindBy (xpath = "//input[@id='phone_number_span3']")
+	private WebElement PhoneNumberTextField3;
+	
+	@FindBy (xpath = "//input[@id='phone_number_span4']")
+	private WebElement PhoneNumberTextField4;
+	
+	@FindBy (xpath = "//input[@id='phone_number_span5']")
+	private WebElement PhoneNumberTextField5;
+	
+	@FindBy (xpath = "//input[@id='call_1']")
+	private WebElement Callbutton1;
+	
+	@FindBy (xpath = "//input[@id='call_2']")
+	private WebElement Callbutton2;
+	
+	@FindBy (xpath = "//input[@id='call_3']")
+	private WebElement Callbutton3;
+	
+	@FindBy (xpath = "//input[@id='call_4']")
+	private WebElement Callbutton4;
+	
+	@FindBy (xpath = "//input[@id='call_5']")
+	private WebElement Callbutton5;
+	
+	@FindBy (xpath = "//input[@id='play_1']")
+	private WebElement MergeButton1;
+	
+	@FindBy (xpath = "//input[@id='play_2']")
+	private WebElement MergeButton2;
+	
+	@FindBy (xpath = "//input[@id='play_3']")
+	private WebElement MergeButton3;
+	
+	@FindBy (xpath = "//input[@id='play_4']")
+	private WebElement MergeButton4;
+	
+	@FindBy (xpath = "//input[@id='play_5']")
+	private WebElement MergeButton5;
+	
+	@FindBy (xpath = "//input[@id='hold_1']")
+	private WebElement HoldButton1;
+	
+	@FindBy (xpath = "//input[@id='hold_2']")
+	private WebElement HoldButton2;
+	
+	@FindBy (xpath = "//input[@id='hold_3']")
+	private WebElement HoldButton3;
+	
+	@FindBy (xpath = "//input[@id='hold_4']")
+	private WebElement HoldButton4;
+	
+	@FindBy (xpath = "//input[@id='hold_5']")
+	private WebElement HoldButton5;
+	
+	@FindBy (xpath = "//input[@id='hangup_1']")
+	private  WebElement HangupCall1;
+	
+	@FindBy (xpath = "//input[@id='hangup_2']")
+	private WebElement HangupCall2;
+	
+	@FindBy (xpath = "//input[@id='hangup_3']")
+	private WebElement HangupCall3;
+	
+	@FindBy (xpath = "//input[@id='hangup_4']")
+	private WebElement HangupCall4;
+	
+	@FindBy (xpath = "//input[@id='hangup_5']")
+	private WebElement HangupCall5;
+	
+	@FindBy (xpath = "//input[@id='conference']")
+	private WebElement ConfButton;
+	
+	@FindBy (xpath = "//input[@id='exit_conference']")
+	private WebElement ExitConference;
+	
+	@FindBy (xpath = "//input[@id='transfer']")
+	private WebElement TransferButton;
+	
+	@FindBy (xpath = "//input[@id='EndCall']")
+	private WebElement EndAllCalls;
+	
+	@FindBy (xpath = "//tbody/tr/td[2]/div[1]")
+	public WebElement QueueNumber;
+	
+	@FindBy (xpath = "//input[@id='first_name']")
+	public WebElement FirstName;
+	
+	@FindBy (xpath = "//input[@id='crm_field_4']")
+	public WebElement AboutCompanyTxtField;
+	
+	@FindBy (id =  "crm_field_2")
+	public WebElement RemarkTxtField;
+	
+	@FindBy (xpath = "//input[@id='crm_field_3']")
+	public WebElement AreaTxtField;
 	
 	// Initialization
 	public AgentHomePage(WebDriver driver)
@@ -167,8 +287,144 @@ public class AgentHomePage{
 		return EndCallBtn;
 	}
 	
-// Business Library Logics
+	public WebElement getConferenceButton() {
+		return ConferenceButton;
+	}
 
+	public WebElement getLine1() {
+		return Line1;
+	}
+
+	public WebElement getLine2() {
+		return Line2;
+	}
+
+	public WebElement getLine3() {
+		return Line3;
+	}
+
+	public WebElement getLine4() {
+		return Line4;
+	}
+
+	public WebElement getLine5() {
+		return Line5;
+	}
+
+	public WebElement getPhoneNumberTextField1() {
+		return PhoneNumberTextField1;
+	}
+
+	public WebElement getPhoneNumberTextField2() {
+		return PhoneNumberTextField2;
+	}
+
+	public WebElement getPhoneNumberTextField3() {
+		return PhoneNumberTextField3;
+	}
+
+	public WebElement getPhoneNumberTextField4() {
+		return PhoneNumberTextField4;
+	}
+
+	public WebElement getPhoneNumberTextField5() {
+		return PhoneNumberTextField5;
+	}
+
+	public WebElement getCallbutton1() {
+		return Callbutton1;
+	}
+
+	public WebElement getCallbutton2() {
+		return Callbutton2;
+	}
+
+	public WebElement getCallbutton3() {
+		return Callbutton3;
+	}
+
+	public WebElement getCallbutton4() {
+		return Callbutton4;
+	}
+
+	public WebElement getCallbutton5() {
+		return Callbutton5;
+	}
+
+	public WebElement getMergeButton1() {
+		return MergeButton1;
+	}
+
+	public WebElement getMergeButton2() {
+		return MergeButton2;
+	}
+
+	public WebElement getMergeButton3() {
+		return MergeButton3;
+	}
+
+	public WebElement getMergeButton4() {
+		return MergeButton4;
+	}
+
+	public WebElement getMergeButton5() {
+		return MergeButton5;
+	}
+
+	public WebElement getHoldButton1() {
+		return HoldButton1;
+	}
+
+	public WebElement getHoldButton2() {
+		return HoldButton2;
+	}
+
+	public WebElement getHoldButton3() {
+		return HoldButton3;
+	}
+
+	public WebElement getHoldButton4() {
+		return HoldButton4;
+	}
+
+	public WebElement getHoldButton5() {
+		return HoldButton5;
+	}
+
+	public WebElement getHangupCall1() {
+		return HangupCall1;
+	}
+
+	public WebElement getHangupCall2() {
+		return HangupCall2;
+	}
+
+	public WebElement getHangupCall3() {
+		return HangupCall3;
+	}
+
+	public WebElement getHangupCall4() {
+		return HangupCall4;
+	}
+
+	public WebElement getHangupCall5() {
+		return HangupCall5;
+	}
+
+	public WebElement getConfButton() {
+		return ConfButton;
+	}
+
+	public WebElement getExitConference() {
+		return ExitConference;
+	}
+
+	public WebElement getTransferButton() {
+		return TransferButton;
+	}
+	
+// Business Library Logics
+	
 	/**
 	 * This Method is used to logout from Agent Module in ConVox CCS 3.2.4 Application
 	 * @param driver
@@ -180,6 +436,7 @@ public class AgentHomePage{
 		Reporter.log("Clicked on Logout Button Succesfully",true);
 		wLib.switchToDefaultFrame(driver);
 	}
+	
 	
 	/**
 	 * This Method is used to do Manual Outbound Call in ConVox CCS 3.2.4 Application
@@ -316,7 +573,7 @@ public class AgentHomePage{
 	 * @param companyName,
 	 * @param text
 	 */
-	public void CrmUpdateAndEndCall(WebDriver driver,String comments,String companyName,String companyLocation,String Disposition)
+	public void CrmUpdateAndEndCall(WebDriver driver,String comments,String firstname ,String remark,String area,String aboutcompanytxtfield,String companyLocation,String Disposition)
 	{
 		wLib.switchToDefaultFrame(driver);
 		Reporter.log("Successfully Switched to Default Frame");
@@ -326,8 +583,14 @@ public class AgentHomePage{
 		Reporter.log("Successfully Switched to CRM Frame");
 		CommentsTxtField.clear();
 		CommentsTxtField.sendKeys(comments);
-		CompanyNameTxtField.clear();
-		CompanyNameTxtField.sendKeys(companyName);
+		FirstName.clear();
+		FirstName.sendKeys(firstname);
+		AboutCompanyTxtField.clear();
+		AboutCompanyTxtField.sendKeys(aboutcompanytxtfield);
+		RemarkTxtField.clear();
+		RemarkTxtField.sendKeys(remark);
+		AreaTxtField.clear();
+		AreaTxtField.sendKeys(area);
 		wLib.handleDropDown(companyLocation, CompanyLoctaionDropDown);
 		wLib.handleDropDown(Disposition, DispositionsDropDowm);
 		EndCallBtn.click();
@@ -367,4 +630,32 @@ public class AgentHomePage{
 		wLib.switchToDefaultFrame(driver);
 	}
 
+	/**
+	 * This Method is used to switch to the Agent Frame
+	 * @param driver
+	 */
+	public void SwitchToAgentFrame(WebDriver driver)
+	{
+		wLib.switchToFrame(driver, "agentframe");
+	}
+	
+	/**
+	 * This method is used to fetch the QueueNumber
+	 */
+	public void QueueNumber()
+	{
+		String queuenumber =  QueueNumber.getText();
+		System.out.println(queuenumber);
+	}
+	
+	/**
+	 * 
+	 * @param driver
+	 */
+	public void ConferenceInAgent(WebDriver driver)
+	{
+		wLib.switchToFrame(driver, "agentframe");
+		Reporter.log("Switched to Agent Frame");
+		ConferenceButton.click();
+	}
 }

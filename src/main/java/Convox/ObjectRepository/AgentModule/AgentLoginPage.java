@@ -1,8 +1,5 @@
 package Convox.ObjectRepository.AgentModule;
 
-import org.openqa.selenium.Alert;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.UnhandledAlertException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -74,22 +71,10 @@ public class AgentLoginPage extends WebDriverLibrary{
 	 */
 	public void LoginToAgentModule(String username,String password,String station) throws Throwable
 	{
-		WebDriver driver = null;
 		AgentImg.click();
 		UsernameTxtField.sendKeys(username);
 		PasswordTxtField.sendKeys(password);
 		StationTxtField.sendKeys(station);
-		try {
-		      LoginBtn.click();
-		} catch (UnhandledAlertException f) {
-		   /*try {
-		        @SuppressWarnings("null")
-				Alert alert = driver.switchTo().alert();
-		        String alertText = alert.getText();
-		        System.out.println("Alert data: " + alertText);
-		        alert.accept();
-		    } catch (NoAlertPresentException e) {*/
-		        f.printStackTrace();
-		    }
-		}
+		LoginBtn.click();		   
 	}
+}

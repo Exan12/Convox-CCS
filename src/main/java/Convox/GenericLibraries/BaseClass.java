@@ -1,6 +1,7 @@
 package Convox.GenericLibraries;
 
 import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -13,6 +14,10 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 //import org.testng.annotations.BeforeTest;
+
+import Convox.ObjectRepository.AgentModule.AgentHomePage;
+import Convox.ObjectRepository.AgentModule.AgentLoginPage;
+
 //import org.testng.annotations.Parameters;
 //import org.testng.annotations.BeforeTest;
 
@@ -21,6 +26,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 /**
  * This class consists of the Prequiste methods to start the testScript
  * @author Kiran
+ * @param <AgentHomePage>
  *
  */
 public class BaseClass {
@@ -77,13 +83,13 @@ public class BaseClass {
 	@BeforeMethod(groups = {"smokeSuite","regressionSuite"})
 	public void bmConfigration() throws Throwable
 	{
-		/*String USERNAME = pLib.getpropertyfile("username");
+		String USERNAME = pLib.getpropertyfile("username");
 		String PASSWORD = pLib.getpropertyfile("password");
 		String STATION  = pLib.getpropertyfile("station");		
 		
 		AgentLoginPage alp = new AgentLoginPage(driver);
 		alp.LoginToAgentModule(USERNAME, PASSWORD, STATION);
-		Reporter.log(USERNAME+" - - - Logged Into The Agent Module Succesfully - - - ",true);*/
+		Reporter.log(USERNAME+" - - - Logged Into The Agent Module Succesfully - - - ",true); 
 	
 	}
 
@@ -91,7 +97,7 @@ public class BaseClass {
 	@AfterMethod(groups = {"smokeSuite","regressionSuite"})
 	public void amConfigration()
 	{
-		/* AgentHomePage ahp = new AgentHomePage(driver);
+	/*	AgentHomePage ahp = new AgentHomePage(driver);
 		ahp.LogoutFromAgentModule(driver);
 		Reporter.log(" - - - Logged Out From The Agent Module Succesfully - - - ",true);*/
 	}
