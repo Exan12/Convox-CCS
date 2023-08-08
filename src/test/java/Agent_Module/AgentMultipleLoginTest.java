@@ -32,9 +32,13 @@ public class AgentMultipleLoginTest extends BaseClass{
 				System.out.println(Queuetext);
 				for(int i=0;i<Queuetext.length();i++)
 				{
+					// Random Hold
+					//Crm Update
 					ahp.CrmUpdateAndEndCall(driver,"Welcome to DPTEL", "DEEPIJA","Deepija Main Product was Convox","No Remark","Main Branch","Hyderabad", "Test --- Test_Call");
 					Reporter.log("CRM updated Succesfully",true);
 					Thread.sleep(3000);
+					
+					// Agent Logout
 					ahp.LogoutFromAgentModule(driver);
 					Reporter.log(USERNAME+" --- Logged Out from Agent Module Succesfully --- ",true);
 

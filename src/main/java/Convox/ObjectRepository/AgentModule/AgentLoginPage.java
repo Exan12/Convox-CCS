@@ -17,7 +17,7 @@ import Convox.GenericLibraries.WebDriverLibrary;
 public class AgentLoginPage extends WebDriverLibrary{
 
 	// Declaration
-	@FindBy(xpath = "//img[@id='agent']")
+	@FindBy(id = "agent")
 	private WebElement AgentImg;
 
 	@FindBy(id = "username")
