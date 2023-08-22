@@ -1,6 +1,7 @@
 package Agent_Module;
 
 import java.io.BufferedReader;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.time.Duration;
@@ -13,11 +14,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
+import Convox.ObjectRepository.AgentModule.AgentLoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FThreading_Multi {
 	
-	public static void main(String[] args) {
+	static int count;
+	public static void main(String[] args) throws Throwable {
 		
 		String csvFilePath = ".\\src\\test\\resources\\agents and station2_4Servers.csv";
 
@@ -26,8 +29,9 @@ public class FThreading_Multi {
 			String line;
 			
 			// Number of threads
-			ExecutorService executor = Executors.newFixedThreadPool(5); 
+			ExecutorService executor = Executors.newFixedThreadPool(50); 
 
+			count=1;
 			while ((line = csvReader.readLine()) != null) {
 				String[] data = line.split(",");
 
@@ -39,6 +43,11 @@ public class FThreading_Multi {
 					
 				Runnable worker = new WorkerThread(agent, station);
 				executor.execute(worker);
+				if(count%5 == 0)
+				{
+					Thread.sleep(60000);
+				}
+				
 				
 			}
 
@@ -61,11 +70,14 @@ class WorkerThread implements Runnable {
 
 	@Override
 	public void run() {
+		
+		long threadId = Thread.currentThread().getId();
+        System.out.println("Thread " + threadId + " started.");
 
 		// Login to the Multiple Agents with Multiple stations
 		WebDriverManager.firefoxdriver().setup();
 		FirefoxOptions fo = new FirefoxOptions();
-		fo.setHeadless(false);
+		fo.setHeadless(true);
 		WebDriver driver = new FirefoxDriver(fo);
 
 		try {
@@ -74,19 +86,18 @@ class WorkerThread implements Runnable {
 			driver.get("http://103.167.216.3:8886/ConVoxCCS/index.php");
 
 			// Login to agent panel with Multiple Stations
+			AgentLoginPage alp = new AgentLoginPage(driver);
+			alp.LoginToAgentModule(agent, "1234", station);
 			WebElement clickOnAgent = driver.findElement(By.id("agent"));
 			clickOnAgent.click();
-			WebElement username = driver.findElement(By.xpath("//input[@id='username']"));
-			username.sendKeys(agent);
-			WebElement password = driver.findElement(By.xpath("//input[@id='password']"));
-			password.sendKeys("1234");
-			WebElement Station = driver.findElement(By.xpath("//input[@id='station']"));
-			Station.sendKeys(station);
-			WebElement loginButton = driver.findElement(By.xpath("//input[@value='Login']"));
-			loginButton.click();
 
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		} finally {
 			// driver.quit();
 		}
+		 System.out.println("Thread " + threadId + " finished.");
 	}
+	
 }
