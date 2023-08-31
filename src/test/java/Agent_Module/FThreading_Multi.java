@@ -45,7 +45,7 @@ public class FThreading_Multi {
 				executor.execute(worker);
 				if(count%5 == 0)
 				{
-					Thread.sleep(60000);
+					Thread.sleep(10000);
 				}
 				
 				
