@@ -22,7 +22,7 @@ public class FThreading_Multi {
 	static int count;
 	public static void main(String[] args) throws Throwable {
 		
-		String csvFilePath = ".\\src\\test\\resources\\agents and station2_4Servers.csv";
+		String csvFilePath = "/home/dtel/git/Convox-CCS/src/test/resources/agents and station2_4Servers.xlsx";
 
 		try {
 			BufferedReader csvReader = new BufferedReader(new FileReader(csvFilePath));
@@ -74,14 +74,15 @@ class WorkerThread implements Runnable {
 		long threadId = Thread.currentThread().getId();
         System.out.println("Thread " + threadId + " started.");
 
+        //System.setProperty("webdriver.gecko.driver", "/home/dtel/Downloads/geckodriver-v0.33.0-linux64/geckodriver");
 		// Login to the Multiple Agents with Multiple stations
-        DesiredCapabilities caps = new DesiredCapabilities();
+        //DesiredCapabilities caps = new DesiredCapabilities();
 		WebDriverManager.firefoxdriver().setup();
-		FirefoxOptions fo = new FirefoxOptions();
-		fo.addArguments("-private");
-        caps.setCapability("moz:firefoxOptions",fo);
-		//fo.setHeadless(true);
-		WebDriver driver = new FirefoxDriver(fo);
+		//FirefoxOptions fo = new FirefoxOptions();
+		//fo.addArguments("-private");
+        //caps.setCapability("moz:firefoxOptions",fo);
+		//fo.setHeadless(true);8*/
+		WebDriver driver = new FirefoxDriver();
 
 		try {
 			driver.manage().window().maximize();

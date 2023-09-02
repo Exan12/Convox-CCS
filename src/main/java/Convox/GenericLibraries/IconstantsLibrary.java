@@ -7,7 +7,7 @@ package Convox.GenericLibraries;
  */
 public interface IconstantsLibrary {
 	
-	String propPATH = ".\\src\\test\\resources\\commonData.properties";
-	String excelPATH = ".\\src\\test\\resources\\Login Data.xlsx";
+	String propPATH = "/home/dtel/git/Convox-CCS/src/test/resources/commonData.properties";
+	String excelPATH = "/home/dtel/git/Convox-CCS/src/test/resources/Agent Login.xlsx";
 
 }

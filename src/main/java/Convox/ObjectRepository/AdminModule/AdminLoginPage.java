@@ -12,10 +12,10 @@ import Convox.GenericLibraries.WebDriverLibrary;
  * @author Kiran
  *
  */
-public class AdminLoginPage extends WebDriverLibrary {
+public class AdminLoginPage extends WebDriverLibrary{
 
 	// Declaration
-	@FindBy(xpath = "//img[@src=\"images/ADMINISTRATOR2.png\"]")
+	@FindBy(xpath = "//img[@title='Admin Login']")
 	private WebElement AdminImg;
 
 	@FindBy(id = "username")
