@@ -11,7 +11,7 @@ import Convox.ObjectRepository.AgentModule.AgentHomePage;
 public class AgentOperationsTest extends BaseClass {
 	
 	/**
-	 * This Tetst Script is used to make Outbound calls in ConVox CCS 3.2.4 Application
+	 * This Test Script is used to make OutBound calls in ConVox CCS 3.2.4 Application
 	 * @throws InterruptedException
 	 */
 	@Test
@@ -23,7 +23,7 @@ public class AgentOperationsTest extends BaseClass {
 	
 	
 	/**
-	 * This Tetst Script is used to Click Hold and Unhold button in ConVox CCS 3.2.4 Application
+	 * This Test Script is used to Click Hold and Unhold button in ConVox CCS 3.2.4 Application
 	 * @throws InterruptedException
 	 */
 	@Test
@@ -47,7 +47,7 @@ public class AgentOperationsTest extends BaseClass {
 	}
 	
 	/**
-	 * This Tetst Script is used to Take the calls in ConVox CCS 3.2.4 Application
+	 * This Test Script is used to Take the calls in ConVox CCS 3.2.4 Application
 	 * @throws Throwable 
 	 */
 	@Test
@@ -58,7 +58,7 @@ public class AgentOperationsTest extends BaseClass {
 	}
 	
 	/**
-	 * This Tetst Script is used to Take Break From the calls in ConVox CCS 3.2.4 Application
+	 * This Test Script is used to Take Break From the calls in ConVox CCS 3.2.4 Application
 	 * @throws InterruptedException 
 	 */
 	@Test
@@ -73,7 +73,7 @@ public class AgentOperationsTest extends BaseClass {
 	}
 	
 	/**
-	 * This Tetst Script is used to show the status of CRM popup in ConVox CCS 3.2.4 Application
+	 * This Test Script is used to show the status of CRM Popup in ConVox CCS 3.2.4 Application
 	 * @throws Throwable
 	 */
 	@Test
@@ -85,7 +85,7 @@ public class AgentOperationsTest extends BaseClass {
 	}
 	
 	/**
-	 * This Tetst Script is used to Update the  CRM popup and End the call in ConVox CCS 3.2.4 Application
+	 * This Test Script is used to Update the  CRM popup and End the call in ConVox CCS 3.2.4 Application
 	 * @throws InterruptedException
 	 */
 	@Test
@@ -99,7 +99,7 @@ public class AgentOperationsTest extends BaseClass {
 	}
 	
 	/**
-	 * This Tetst Script is used to Wrap up The call in ConVox CCS 3.2.4 Application
+	 * This Test Script is used to Wrap up The call in ConVox CCS 3.2.4 Application
 	 * @throws Throwable
 	 */
 	@Test
@@ -113,7 +113,7 @@ public class AgentOperationsTest extends BaseClass {
 	}
 	
 	/**
-	 * This Test Script is used to intiate calls Automatically and update CRM in 
+	 * This Test Script is used to Initiate calls Automatically and update CRM in 
 	 * ConVox CCS 3.2.4 Application
 	 */
 	@Test
@@ -128,7 +128,7 @@ public class AgentOperationsTest extends BaseClass {
 				System.out.println(Queuetext);
 				for(int i=0;i<Queuetext.length();i++)
 				{
-					ahp.CrmUpdateAndEndCall(driver,"Welcome to DPTEL", "DEEPIJA","Deepija Main Product was Convox","No Remark","Main Branch","Hyderabad", "Test --- Test_Call");
+					ahp.CrmUpdateAndEndCall(driver,"Welcome to DTEL", "DEEPIJA","Deepija Main Product was ConVox","No Remark","Main Branch","Hyderabad", "Test --- Test_Call");
 					Reporter.log("CRM updated Succesfully",true);
 				}
 			}

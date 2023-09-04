@@ -83,13 +83,13 @@ public class BaseClass {
 	@BeforeMethod(groups = {"smokeSuite","regressionSuite"})
 	public void bmConfigration() throws Throwable
 	{
-		String USERNAME = pLib.getpropertyfile("username");
+		/*String USERNAME = pLib.getpropertyfile("username");
 		String PASSWORD = pLib.getpropertyfile("password");
 		String STATION  = pLib.getpropertyfile("station");		
 		
 		AgentLoginPage alp = new AgentLoginPage(driver);
 		alp.LoginToAgentModule(USERNAME, PASSWORD, STATION);
-		Reporter.log(USERNAME+" - - - Logged Into The Agent Module Succesfully - - - ",true);  
+		Reporter.log(USERNAME+" - - - Logged Into The Agent Module Successfully - - - ",true);  */
 		
 		
 	}
@@ -98,9 +98,9 @@ public class BaseClass {
 	@AfterMethod(groups = {"smokeSuite","regressionSuite"})
 	public void amConfigration()
 	{
-		AgentHomePage ahp = new AgentHomePage(driver);
+	/*	AgentHomePage ahp = new AgentHomePage(driver);
 		ahp.LogoutFromAgentModule(driver);
-		Reporter.log(" - - - Logged Out From The Agent Module Succesfully - - - ",true);
+		Reporter.log(" - - - Logged Out From The Agent Module Successfully - - - ",true); */
 	}
 
 	@AfterTest

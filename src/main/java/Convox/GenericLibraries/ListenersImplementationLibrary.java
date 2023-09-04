@@ -1,7 +1,6 @@
 package Convox.GenericLibraries;
 
 import java.io.IOException;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -14,7 +13,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 /**
  * This class consists of all abstract Methods of ITestListener Interface
- * @author Mani
+ * @author Kiran
  *
  */
 public class ListenersImplementationLibrary implements ITestListener
@@ -80,11 +79,11 @@ public class ListenersImplementationLibrary implements ITestListener
 	{
 		Reporter.log("Execution of Suite File was Started",true);
 		
-		// Execution of Suite File started, Configure the Extent Reports.  Reports-11-11-2022-11-03.html
-		ExtentSparkReporter htmlReports = new ExtentSparkReporter(".\\ExtentReports\\Reports - "+new JavaLibrary().getSystemDateInFormat()+" .html");
+		// Execution of Suite File started, Configure the Extent Reports.Reports-11-11-2022-11-03.html
+		ExtentSparkReporter htmlReports = new ExtentSparkReporter("/home/dtel/git/Convox-CCS/ExtentReports//Reports - "+new JavaLibrary().getSystemDateInFormat()+" .html");
 		htmlReports.config().setDocumentTitle("Extent Reports For CONVOX CSS 3.2.4  Applicaction");
 		htmlReports.config().setTheme(Theme.DARK);
-		htmlReports.config().setReportName("CONVOX CSS 3.2.4 Execution Reports");
+		htmlReports.config().setReportName("CONVOX CCS 3.2.4 Execution Reports");
 		
 		// Attach Report to Extent Reports
 		report = new ExtentReports();
@@ -92,7 +91,7 @@ public class ListenersImplementationLibrary implements ITestListener
 		report.setSystemInfo("Base Browser", "Chrome");
 		report.setSystemInfo("Base Environment", "Testing");
 		report.setSystemInfo("Base Platform", "windows-10");
-		report.setSystemInfo("Base Url", "https://ccs.deepijatel.ai/ConVoxCCS/");
+		report.setSystemInfo("Base Url", "http://h77.deepijatel.in/ConVoxCCS/");
 		report.setSystemInfo("Reporter Name", "KIRAN");
 		
 		

@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0">
   <modelVersion>4.0.0</modelVersion>
   <groupId>Deepija.Telecom.Pvt.Ltd</groupId>
-  <artifactId>Convox.CSS.33.2.4</artifactId>
+  <artifactId>Convox.CCS.3.2.4</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
   <properties>
@@ -198,6 +198,19 @@
 </plugins>
 </build>
 </profile>
+
+ <profile>
+            <id>sonar</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <!-- Optional URL to server. Default value is http://localhost:9000 -->
+                <sonar.host.url>
+                  http://172.165.12.110:9000
+                </sonar.host.url>
+            </properties>
+        </profile>
 
 </profiles>
 

@@ -7,7 +7,7 @@
 
     <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
     <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
-    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -21,8 +21,7 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
@@ -51,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--952018828\testng-customsuite.xml</span>
+                    <span>testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="AdminModule.AdminOperationsTest" class="method navigator-link" hash-for-method="AdminLogout">AdminLogout</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="AdminModule.AdminOperationTest" class="method navigator-link" hash-for-method="adminOperationsTest">adminOperationsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,41 +121,68 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">AdminModule.AdminOperationsTest</span>
+              <span class="class-name">AdminModule.AdminOperationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AdminLogout">
-                  </a> <!-- AdminLogout -->
-                  <span class="method-name">AdminLogout</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Cannot inject @Test annotated Method [AdminLogout] with [interface org.openqa.selenium.WebDriver].
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:439)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:353)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:708)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                  <a name="adminOperationsTest">
+                  </a> <!-- adminOperationsTest -->
+                  <span class="method-name">adminOperationsTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //img[@src=&quot;../images/ADMIN_logo.png&quot;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;pop-os&apos;, ip: &apos;127.0.1.1&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.4.6-76060406-generic&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fcb0ac82-8b52-43ea-aaca-1da34ff581b4, findElement {using=xpath, value=//img[@src=&quot;../images/ADMIN_logo.png&quot;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 116.0.3, moz:accessibilityChecks: false, moz:buildID: 20230815173142, moz:debuggerAddress: 127.0.0.1:58058, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 6.4.6-76060406-generic, moz:processID: 294305, moz:profile: /tmp/rust_mozprofileMapYYV, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://127.0.0.1:58058/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fcb0ac82-8b52-43ea-aaca-1da34ff581b4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at Convox.ObjectRepository.AdminModule.AdminHomePage.AdminLogout(AdminHomePage.java:157)
+	at AdminModule.AdminOperationTest.adminOperationsTest(AdminOperationTest.java:41)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestRunner.privateRun(TestRunner.java:848)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+	at org.testng.TestNG.runSuites(TestNG.java:1114)
+	at org.testng.TestNG.run(TestNG.java:1082)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -169,7 +195,7 @@ For more information on native dependency injection please refer to https://test
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Lenovo\AppData\Local\Temp\testng-eclipse--952018828\testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse-1001006565/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -178,11 +204,7 @@ For more information on native dependency injection please refer to https://test
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;AdminModule.AdminOperationsTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;AdminLogout&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- AdminModule.AdminOperationsTest --&gt;
+      &lt;class name=&quot;AdminModule.AdminOperationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -224,14 +246,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'AdminLogout')
-data.setCell(0, 2, 'AdminModule.AdminOperationsTest')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'adminOperationsTest')
+data.setCell(0, 2, 'AdminModule.AdminOperationTest')
+data.setCell(0, 3, 8111);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -242,6 +264,18 @@ return data;
             <span class="header-content">Reporter output for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">adminOperationsTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">--- Logged Into Admin Module Succesfully ---</span>
+                <span class="reporter-method-output">SystemSettings Dropdown clicked Succesfully</span>
+                <span class="reporter-method-output">Clicked on List Button</span>
+                <span class="reporter-method-output">Switched to Active List Frame</span>
+                <span class="reporter-method-output">Clicked on Add List Lookup Button</span>
+                <span class="reporter-method-output">Kiran Name Added Succesfully to the List Name Textbox</span>
+                <span class="reporter-method-output">List Created Successfully</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
@@ -256,6 +290,42 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">AdminModule.AdminOperationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">bsConfigration</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">bcConfigration</span>
+                <span class="method-start">131 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">adminOperationsTest</span>
+                <span class="method-start">2120 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">bmConfigration</span>
+                <span class="method-start">2120 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">amConfigration</span>
+                <span class="method-start">10333 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">acConfigration</span>
+                <span class="method-start">10333 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">acConfigration</span>
+                <span class="method-start">10847 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-suite after">
+                <span class="method-name">asConfigration</span>
+                <span class="method-start">10995 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

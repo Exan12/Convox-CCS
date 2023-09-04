@@ -301,7 +301,7 @@ public class WebDriverLibrary {
     {
     	TakesScreenshot ts = (TakesScreenshot) driver;
     	File src = ts.getScreenshotAs(OutputType.FILE);
-    	String path = ".\\ScreenShots\\"+screenshotName+".png";
+    	String path = "/home/dtel/git/Convox-CCS/ScreenShots"+screenshotName+".png";
     	File dest = new File(path);
     	Files.copy(src, dest);
     	

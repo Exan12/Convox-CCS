@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AdminModule.AdminOperationsTest">
+      <class name="AdminModule.AdminOperationTest">
         <methods>
-          <include name="AdminLogout"/>
+          <include name="bmConfigration"/>
+          <include name="acConfigration"/>
+          <include name="asConfigration"/>
+          <include name="bcConfigration"/>
+          <include name="bsConfigration"/>
+          <include name="adminOperationsTest"/>
+          <include name="amConfigration"/>
         </methods>
-      </class> <!-- AdminModule.AdminOperationsTest -->
+      </class> <!-- AdminModule.AdminOperationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -13,11 +13,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.annotations.Listeners;
 
 import Convox.ObjectRepository.AgentModule.AgentLoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class FThreading_Multi {
+	
 	
 	static int count;
 	public static void main(String[] args) throws Throwable {
@@ -74,14 +77,14 @@ class WorkerThread implements Runnable {
 		long threadId = Thread.currentThread().getId();
         System.out.println("Thread " + threadId + " started.");
 
-        //System.setProperty("webdriver.gecko.driver", "/home/dtel/Downloads/geckodriver-v0.33.0-linux64/geckodriver");
 		// Login to the Multiple Agents with Multiple stations
-        //DesiredCapabilities caps = new DesiredCapabilities();
-		WebDriverManager.firefoxdriver().setup();
-		//FirefoxOptions fo = new FirefoxOptions();
-		//fo.addArguments("-private");
-        //caps.setCapability("moz:firefoxOptions",fo);
-		//fo.setHeadless(true);8*/
+        
+        /*DesiredCapabilities caps = new DesiredCapabilities();
+		  FirefoxOptions fo = new FirefoxOptions();
+		  fo.addArguments("-private");
+          caps.setCapability("moz:firefoxOptions",fo);
+		  fo.setHeadless(true);*/
+        WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver();
 
 		try {

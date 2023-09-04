@@ -3,15 +3,22 @@ package AdminModule;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
+
+import Convox.GenericLibraries.BaseClass;
 import Convox.GenericLibraries.PropertyFileLibrary;
 import Convox.ObjectRepository.AdminModule.AdminHomePage;
 import Convox.ObjectRepository.AdminModule.AdminLoginPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class AdminOperationTest {
+@Listeners(Convox.GenericLibraries.ListenersImplementationLibrary.class)
+public class AdminOperationTest extends BaseClass{
 
-	public static void main(String[] args) throws Throwable {	
-		
+	@Test
+	public void adminOperationsTest() throws Throwable
+	{	
+
 		PropertyFileLibrary pLib = new PropertyFileLibrary();
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver = new FirefoxDriver();
@@ -19,16 +26,21 @@ public class AdminOperationTest {
 		String USERNAME = pLib.getpropertyfile("admin_Username");
 		String PASSWORD = pLib.getpropertyfile("admin_Password");
 		driver.get(URL);
-		
-		// ADMIN Login to the ConVox CCS Application 
+
+		// ADMIN Login to the ConVox CCS 3.2.4 Application 
 		AdminLoginPage adlp = new AdminLoginPage(driver);
 		adlp.LoginToAdminModule(USERNAME, PASSWORD);
 		Reporter.log("--- Logged Into Admin Module Succesfully ---",true);
 		
-		// ADMIN Logout from ConVox CCS 3.2.4 Application
+		// LIST Creation in ConVox CCS 3.2.4 Application
 		AdminHomePage adhp = new AdminHomePage(driver);
+		adhp.ListCreation(driver,"Kiran");
+		Reporter.log("List Created Successfully",true);
+
+		// ADMIN Logout from ConVox CCS 3.2.4 Application
 		adhp.AdminLogout();
 		Reporter.log("--- Logged Out from Admin Module Succesfully ---",true);
+		driver.quit();
 
 	}
 
