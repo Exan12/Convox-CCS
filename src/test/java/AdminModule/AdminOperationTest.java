@@ -31,12 +31,12 @@ public class AdminOperationTest extends BaseClass{
 		AdminLoginPage adlp = new AdminLoginPage(driver);
 		adlp.LoginToAdminModule(USERNAME, PASSWORD);
 		Reporter.log("--- Logged Into Admin Module Succesfully ---",true);
-		
+
 		// LIST Creation in ConVox CCS 3.2.4 Application
 		AdminHomePage adhp = new AdminHomePage(driver);
-		adhp.ListCreation(driver,"Kiran");
-		Reporter.log("List Created Successfully",true);
-
+		adhp.ListCreation(driver);
+		adhp.ProcessActive(driver);
+	
 		// ADMIN Logout from ConVox CCS 3.2.4 Application
 		adhp.AdminLogout();
 		Reporter.log("--- Logged Out from Admin Module Succesfully ---",true);

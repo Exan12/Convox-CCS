@@ -8,8 +8,8 @@
           <include name="bmConfigration"/>
           <include name="acConfigration"/>
           <include name="asConfigration"/>
-          <include name="bcConfigration"/>
           <include name="bsConfigration"/>
+          <include name="bcConfigration"/>
           <include name="adminOperationsTest"/>
           <include name="amConfigration"/>
         </methods>
